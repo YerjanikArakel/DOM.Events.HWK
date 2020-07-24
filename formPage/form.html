@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .conteiner {
+        display: flex;
+      }
+      .container-item {
+        display: flex;
+        margin: 20px 5px;
+      }
+    </style>
+    <title>Form Example</title>
+  </head>
+  <body>
+    <form class="container" method="GET" target="_self">
+      <label for="name" class="fNameLabel container-item">
+        First Name
+        <input type="text" id="name" class="fnameInput container-item" />
+      </label>
+      <label for="lName" class="container-item">
+        Last Name
+        <input type="text" id="lName" class="lnameInput container-item" />
+      </label>
+      <label for="age">
+        <input type="number" id="age" class="ageInput container-item" />
+      </label>
+      <input type="submit" class="submit-button container-item" />
+    </form>
+    <script src="./form.js"></script>
+  </body>
+</html>
